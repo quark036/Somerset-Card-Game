@@ -369,8 +369,8 @@ public class Hand
 							}
 							
 							
-							if (person.getPlayerHand()==1)
-							{
+						if (person.getPlayerHand()==1)
+						{
 							int counter = 0;
 							if (Deck.playerOneHand.get(cardPlayed-1).getSuit() != suitLed)
 							{
@@ -397,7 +397,7 @@ public class Hand
 									System.out.println();
 								}
 							}
-							if (counter == 0 || (Deck.playerOneHand.get(cardPlayed-1).getSuit() == suitLed ))	
+							else if (counter == 0 || (Deck.playerOneHand.get(cardPlayed-1).getSuit() == suitLed ))	
 							{
 								cardsInTrick.add(Deck.playerOneHand.get(cardPlayed-1));
 								System.out.println("You just played the " + Deck.playerOneHand.get(cardPlayed-1).getRank() + "/" +Deck.playerOneHand.get(cardPlayed-1).getSuit());
