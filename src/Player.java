@@ -1,12 +1,12 @@
 
 public class Player
 	{
-		public String playerName;
-		public int playerNumber;
-		public int playerTeamNumber;
-		public int playerHand;
-		public boolean hasBid;
-		public Player (String p,int pN, int pTN, int pH, boolean hB)
+		private String playerName;
+		private int playerNumber;
+		private int playerTeamNumber;
+		private int playerHand;
+		private boolean hasBid;
+		private Player (String p,int pN, int pTN, int pH, boolean hB)
 		{
 			playerName = p;
 			playerNumber = pN;
@@ -19,12 +19,10 @@ public class Player
 			{
 				return playerName;
 			}
-
 		public void setPlayerName(String playerName)
 			{
 				this.playerName = playerName;
 			}
-
 		public int getPlayerNumber()
 			{
 				return playerNumber;
@@ -41,21 +39,17 @@ public class Player
 			{
 				this.playerTeamNumber = playerTeamNumber;
 			}
-
 		public int getPlayerHand()
 			{
 				return playerHand;
 			}
-
 		public void setPlayerHand(int playerHand)
 			{
 				this.playerHand = playerHand;
 			}
-
 		public boolean isHasBid() {
 			return hasBid;
 		}
-
 		public void setHasBid(boolean hasBid) {
 			this.hasBid = hasBid;
 		}
